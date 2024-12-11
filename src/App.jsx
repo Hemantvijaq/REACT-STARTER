@@ -31,6 +31,7 @@ function App(){
   };
 
   const handleReset = (e) =>{
+    e.preventDefault();
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -45,7 +46,7 @@ function App(){
     setUrl("");
     setSelectedOption("");
     setAbout("");
-    e.reset()
+    e.target.reset()
   };
   
   return(
