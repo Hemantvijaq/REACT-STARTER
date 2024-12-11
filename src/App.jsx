@@ -186,7 +186,7 @@ function App(){
          <button type='reset' value="reset" onClick={() => handleReset()}>
           Reset
          </button>
-         <button type='submit' value='submit' onClick={() => handleReset()}>Submit
+         <button type='submit' value='submit' onClick={() => handleSubmit()}>Submit
          </button>
       </form>
       </fieldset>
