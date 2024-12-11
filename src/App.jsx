@@ -30,7 +30,7 @@ function App(){
     }));
   };
 
-  const handleReset = () =>{
+  const handleReset = (e) =>{
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -45,7 +45,7 @@ function App(){
     setUrl("");
     setSelectedOption("");
     setAbout("");
-
+    e.reset()
   };
   
   return(
@@ -185,7 +185,7 @@ function App(){
          <button type='reset' value="reset" onClick={() => handleReset()}>
           Reset
          </button>
-         <button type='submit' value='submit' onClick={() => handleReset()}>Sunmit
+         <button type='submit' value='submit' onClick={() => handleReset()}>Submit
          </button>
       </form>
       </fieldset>
